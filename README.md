@@ -4,4 +4,5 @@
 Variables
 Functions
 console log debuging style
-How to connect functions to html
+How to connect functions to html - Document Object Model (DOM)
+Objects aka how you use JavaScript to modify a website
