@@ -19,3 +19,6 @@ let my_name = "Peter Johnson"
 let greeting = "Welcome "
 //render the welcome message using the welcomeEl.innerText
 welcomeEl.innerText = greeting + my_name
+
+// Add an emoji at the end of the greeting
+welcomeEl.innerText += "👋"
