@@ -11,7 +11,8 @@ function increment() {
         countEl.textContent = count
         console.log(count)
 }
-
+count = 0
+countEl.textContent = count
 // grab the save-el paragraph and store it in a variable called saveEl
 let saveEl = document.getElementById("save-el")
 // create a variable that contains both the count and the dash seperator ie "12 - "
@@ -21,5 +22,7 @@ let saveEl = document.getElementById("save-el")
 function save() {
         let countStr = count + " - "
         saveEl.textContent += countStr
-        console.log(saveEl)
+        // console.log(saveEl)
+        count = 0
+        countEl.textContent = count
 }
