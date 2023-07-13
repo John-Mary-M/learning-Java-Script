@@ -7,18 +7,19 @@ let count = 0
 let countEl = document.getElementById("count-el")
 
 function increment() {
-        count = count + 1
-        countEl.innerText = count
+        count += 1
+        countEl.textContent = count
         console.log(count)
 }
-// Grab the welcome-el paragraph and store it in a variable called welcomeEl
-let welcomeEl = document.getElementById("welcome-el")
-//crete 2 varriables (name & greeting) that contain your name
-// and greeting we want to render to the page
-let my_name = "Peter Johnson"
-let greeting = "Welcome "
-//render the welcome message using the welcomeEl.innerText
-welcomeEl.innerText = greeting + my_name
 
-// Add an emoji at the end of the greeting
-welcomeEl.innerText += "👋"
+// grab the save-el paragraph and store it in a variable called saveEl
+let saveEl = document.getElementById("save-el")
+// create a variable that contains both the count and the dash seperator ie "12 - "
+// render the variable in the saveEl using innerText
+
+// NB: Make sure you dont delete the existing content of paragraph
+function save() {
+        let countStr = count + " - "
+        saveEl.textContent += countStr
+        console.log(saveEl)
+}
