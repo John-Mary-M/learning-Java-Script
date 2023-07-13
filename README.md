@@ -1,2 +1,7 @@
 ###### Following a tutorial to learn Java script on my own
 
+#### What i will have learnt by the end of the tutorial
+Variables
+Functions
+console log debuging style
+How to connect functions to html
