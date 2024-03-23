@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8a,8b,8c</title>
+</head>
+<body>
+  <script>
+    const basketBall = {
+      price: 2095,
+      'name': 'NBA'
+    };
+    console.log(basketBall);
+    // 8b
+    basketBall.price += 500;
+    console.log(basketBall);
+    // 8c adding a a property to an already existing object
+    basketBall['delivery-time'] = '3 days';
+    console.log(basketBall);
+    // 8d
+    function comparePrice(product1, product2) {
+      if (product1.name && product2.name){
+        if (product1.price > product2.price){
+          return product2.price;
+        } else {
+          return product1.price;
+        }
+      } else {
+        return null;
+      }
+    }
+
+    const shirt ={
+      'name': 'sleeveles',
+      price: 500
+    }
+
+    console.log(comparePrice(basketBall, shirt));
+
+    // 8e creating function that returns true if the products have the same values
+    function isSameProduct (product1, product2){
+      if (!product1.name && !product2.name){
+        return 'null product objects';
+      } else {
+        if ((product1.price === product2.price) && (product1.name === product2.name)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+    }
+
+    console.log(isSameProduct(shirt, shirt));
+
+    // 8f. convert string to lowercase: toLowerCase string method
+    const greeting = 'Good Morning';
+    console.log(greeting.toLowerCase());
+
+    // 8g repeating a string many times: repeat string method takes a number argument
+    const testStr = 'test';
+    console.log(testStr.repeat(56));
+  </script>
+</body>
+</html>

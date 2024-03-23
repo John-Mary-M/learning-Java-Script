@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects</title>
+</head>
+<body>
+  <p>Youtube Subscribe Button</p>
+  <button onclick="
+    Subscribe();
+  " class="js-subscribe-button">Subscribe</button>
+  <p>Amazon Shipping Calculator</p>
+  <input placeholder="Cost of order" class="js-cost-input" onkeydown="
+    handleCostKeyDown (event);
+  ">
+  <button onclick="
+    calculateTotal();
+  ">Calculate</button>
+
+  <p class="js-total-cost"></p>
+
+  <script>
+    // converting number to string
+    console.log (String(90));
+    console.log ('25' - 5);
+
+    // the window object is a built-in object that represents the browse while the document object only represents the web page
+    window.document
+    window.console
+    window.alert
+    // window object has a shortcut in js and we dont have to always type it manually.
+
+    function handleCostKeyDown (event){
+      if (event.key === 'Enter'){
+      calculateTotal();
+      }
+    }
+
+    function calculateTotal(){
+      const inputElement = document.querySelector('.js-cost-input');
+      // the DOM always gives a string so we have to convert it to a number using the 'Number' function.
+      let cost = Number(inputElement.value);
+      
+      if (cost < 40){
+        cost = cost + 10;
+      }
+
+      document.querySelector('.js-total-cost')
+        .innerHTML = `$${cost}`;
+    }
+
+    
+
+    function Subscribe(){
+      const buttonElement = (document.querySelector('.js-subscribe-button'));
+
+      if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerText = 'Subscribed!';
+      } else {
+        buttonElement.innerText = 'Subscribe';
+      }
+    }
+
+  </script>
+</body>
+</html>

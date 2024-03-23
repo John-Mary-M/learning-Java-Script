@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9a.html</title>
+</head>
+<body>
+  <button class="js-button-9a">9a</button>
+  <button class="js-button-9b">9a</button>
+
+  <button class="heads" onclick="
+    playerChoiceHeads();
+  ">heads</button>
+
+  <button class="tails" onclick="
+    playerChoiceTails();
+  ">tails</button>
+  
+  <p class="js-pElem"></p>
+
+  <input id="js-myName" type="text" placeholder="Name" value="Enter your name here" onkeydown="checkKey(event)">
+  <button class="js-subElem" onclick="
+    displayMyName();
+  ">submit</button>
+  <p id="result"></p>
+
+  <script>
+    console.log(document.querySelector('.js-button-9a'));
+    document.querySelector('.js-button-9b')
+      .innerText = '9b done!';
+    console.log(document.querySelector('.js-button-9b'));
+
+    function playerChoiceHeads (){
+      if (document.querySelector('.heads')){
+        document.querySelector('.js-pElem')
+          .innerText = 'You chose: heads';
+      }
+    }
+
+    function playerChoiceTails (){
+      if (document.querySelector('.tails')){
+        document.querySelector('.js-pElem')
+          .innerText = 'You chose: tails';
+      }
+    }
+
+    function displayMyName(){
+      let text = document.getElementById('js-myName').value;
+      if (document.querySelector('.js-subElem')){
+        document.getElementById('result')
+          .innerText = "Your name is: " + text;
+        // console.log(`Your name is: ${text}`);
+      }
+    }
+
+    function checkKey(e) {
+      if (e.keyCode == 13) {
+        let text = document.getElementById("js-myName").value;
+        document.getElementById("result").innerHTML = "Your name is: " + text;
+      }
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random number</title>
+</head>
+<body>
+  
+  <script>
+    const rNum = Math.random();
+    const guess = 'heads';
+    if (rNum < 0.5) {
+      let result = 'heads';
+      console.log('You win!');
+    } else {
+      let result = 'tails';
+      console.log('You loose!');
+    }
+    
+  </script>
+</body>
+</html>
