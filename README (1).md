@@ -31,3 +31,7 @@ Reviewed CSS, and added CSS to projects
 learned about the classList property
 Finished Rock Paper Scissors game
 Applied Seperation of cooncerns to the code
+
+### 24/03/20024
+stopped at `9:01:09`
+Worked on classList projects and started on arrays and loops.
