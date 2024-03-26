@@ -32,6 +32,10 @@ learned about the classList property
 Finished Rock Paper Scissors game
 Applied Seperation of cooncerns to the code
 
-### 24/03/20024
+### 24/03/2024
 stopped at `9:01:09`
 Worked on classList projects and started on arrays and loops.
+
+### 26/03/2024
+stopped at `9:14:34`
+COntinued to work with loops and arrays. Learnt the cumlator pattern to work with arrays and loops. Start on the todoList Version 2 project.
