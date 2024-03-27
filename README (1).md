@@ -39,3 +39,7 @@ Worked on classList projects and started on arrays and loops.
 ### 26/03/2024
 stopped at `9:14:34`
 COntinued to work with loops and arrays. Learnt the cumlator pattern to work with arrays and loops. Start on the todoList Version 2 project.
+
+### 27/03/2024
+stopped at `9:26:23`
+Start by completing exercises 11g through 11h
