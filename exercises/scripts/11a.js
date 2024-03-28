@@ -39,7 +39,7 @@ for (i = 0; i < 11; i+=2){
 for (i = 5; i !== 0; i--){
   console.log(i);
 }
-*/
+
 // 11f repeating d and e above with a while loop
 let count = 0;
 while (count < 11){
@@ -73,3 +73,45 @@ function addOne(array){
 
 console.log(addOne([1, 2, 3]));
 console.log(addOne([-2, -1, 0, 99]));
+
+// 11i addNum(array, num) returns an array where each number is increased by num.
+function addNum(array, num){
+  const returnArray = [];
+  for (let i = 0; i < array.length; i++){
+    const members = array[i];
+    returnArray.push(members + num);
+  }
+  return returnArray
+}
+console.log(addNum([1, 2, 3], 2));
+console.log(addNum([1, 2, 3], 3));
+console.log(addNum([-2, -1, 0, 99], 2));
+*/
+
+// 11j addArrays(array1, array2) adds each number in the arrays
+function addArrays(array1, array2){
+  const returnArray = [];
+  for (i = 0; i < array1.length; i++){
+    for (i = 0; i < array2.length; i++){
+      const members = array1[i];
+      returnArray.push(members + array2[i]);
+    }
+  }
+  return returnArray
+}
+console.log(addArrays([1, 1, 2], [1,1,3]));
+console.log(addArrays([1, 2, 3], [4,5,6]));
+
+// 11k countPositive(nums) where nums is an array of numbers and countPositive returns how many numbers in the array are greater than 0.
+function countPositive(nums){
+  let counter = 0;
+  for (i = 0; i < nums.length; i++){
+    if (nums[i] > 0){
+      counter += 1;
+    }
+  }
+  return counter;
+}
+
+console.log(countPositive([1, -3, 5]));
+console.log(countPositive([-2, 3, -5, 7, 10]));
