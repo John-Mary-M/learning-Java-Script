@@ -43,3 +43,12 @@ COntinued to work with loops and arrays. Learnt the cumlator pattern to work wit
 ### 27/03/2024
 stopped at `9:26:23`
 Start by completing exercises 11g through 11h
+
+### 28/03/2024
+stopped at `9:59:42`
+finished pending exercises.
+Finished todo list project.
+Learnt how to generate HTML using js and the DOM. 
+I also understood why div elements are easier to work with (they have no default styling so one can manipulate them to fit the situation at hand)
+This is the first project i have completed that combines HTML CSS and js.
+
