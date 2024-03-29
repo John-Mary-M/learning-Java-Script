@@ -52,3 +52,6 @@ Learnt how to generate HTML using js and the DOM.
 I also understood why div elements are easier to work with (they have no default styling so one can manipulate them to fit the situation at hand)
 This is the first project i have completed that combines HTML CSS and js.
 
+### 29/03/2024
+stopped at `10:13:05`
+learnt destructuring arrays with shorthand, learnt the continue and break keywords and how they work with loops, also learnt how to slice arrays, and how arrays a a reference to a memory location were the values are stored. i.e. when to use slice to create a new array from an existing array.
