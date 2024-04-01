@@ -127,11 +127,14 @@
       const numsDoubled = [];
       for (let i = 0; i < array.length; i++){
         const num = array[i];
+        if (num === 0){
+          break;  
+        }
         numsDoubled.push(num * 2);
       }
-      console.log (numsDoubled);
+      return (numsDoubled);
     }
-    doubleArry(nums);
+    console.log(doubleArry(nums));
 
   </script>
 </body>
