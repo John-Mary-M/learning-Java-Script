@@ -55,3 +55,7 @@ This is the first project i have completed that combines HTML CSS and js.
 ### 29/03/2024
 stopped at `10:13:05`
 learnt destructuring arrays with shorthand, learnt the continue and break keywords and how they work with loops, also learnt how to slice arrays, and how arrays a a reference to a memory location were the values are stored. i.e. when to use slice to create a new array from an existing array.
+
+### 2/04/2024
+stopped at `11:01:53`
+Learnt the forEach array method, learnt asynchronous code (doesnt wait for previous line to finish execution) and synchronous code. Also learnt about advanced ways to use functions as values and their call backs. Modified the rock paper scissors game to have an auto play button.

@@ -61,7 +61,7 @@
    }, 3000);
    */
    //Asynchronous code
-   /* computer doessnt wait for the previous line to finish execution before it goes to the next line of code
+   /* computer doesnt wait for the previous line to finish execution before it goes to the next line of code
    
    Synchronous code on the other hand simply means that the computer waits for the previous line to finish before going to the next line*/
    console.log('Nextline')
@@ -83,6 +83,11 @@
     'watch youtube'
    ]
    arry.forEach(function(value, index){
+    // the forEach method doesnt work with the continue keyword to skip but we can instead use return
+    if (value === 'wash dishes'){
+      return;
+    }
+
     console.log(index);  
     console.log(value);
    });
