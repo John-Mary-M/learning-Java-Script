@@ -9,6 +9,7 @@
   
 
   <script>
+    /*
     // easier to read and givives us the advantage of hoisting. ie calling a function before its created
    function greeting(){
     console.log('hello');
@@ -49,6 +50,27 @@
    run(function(){
     console.log('hello4');
    });
+   */
+
+   // allows us to call a function in the future
+   // it takes 2 values: the function you would like to call in the future, and the amount of time it should wait before it is called (in millisecounds)
+   setTimeout(function(){
+    console.log('timeout');
+    console.log('timeout2');
+   }, 3000);
+
+   //Asynchronous code
+   /* computer doessnt wait for the previous line to finish execution before it goes to the next line of code
+   
+   Synchronous code on the other hand simply means that the computer waits for the previous line to finish before going to the next line*/
+   console.log('Nextline')
+
+   /* Similar to setTimeout, set interval is an inbuilt function in js, that takes 2 values: a function and the time to wait before calling it. Difference is that it keeps calling the functions in intervals of the specified time*/ 
+   setInterval(function(){
+    console.log('Interval');
+   }, 3000);
+
+   console.log('Nextline2');
   </script>
 </body>
 </html>
