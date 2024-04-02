@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>advanced functions</title>
+</head>
+<body>
+  
+
+  <script>
+    // easier to read and givives us the advantage of hoisting. ie calling a function before its created
+   function greeting(){
+    console.log('hello');
+   }
+
+   greeting();
+
+   // functions are values
+   // annonymous function
+   const function1 = function (){
+    console.log('Hello2');
+   }
+
+   console.log(function1);
+   console.log(typeof(function1));
+   function1();
+
+   // functions become mehods when used inside an object
+   const object1 = {
+    num: 2,
+    fun: function (){
+      console.log('hello3');
+    }
+   }
+
+   object1.fun();
+
+   // passing a value into a function
+   function display(param){
+    console.log(param);
+   }
+   display(3);
+
+   // passing a function into a function
+   function run(param){
+    param();
+   }
+   run(function(){
+    console.log('hello4');
+   });
+  </script>
+</body>
+</html>
