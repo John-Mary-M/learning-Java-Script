@@ -1,0 +1,16 @@
+/* 12c */
+.start-button, .start-button2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.add-button{
+  margin-top: 15px;
+  font-size: 25px;
+}

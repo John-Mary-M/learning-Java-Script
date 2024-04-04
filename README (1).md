@@ -59,3 +59,7 @@ learnt destructuring arrays with shorthand, learnt the continue and break keywor
 ### 2/04/2024
 stopped at `11:01:53`
 Learnt the forEach array method, learnt asynchronous code (doesnt wait for previous line to finish execution) and synchronous code. Also learnt about advanced ways to use functions as values and their call backs. Modified the rock paper scissors game to have an auto play button.
+
+### 4/04/2024
+stopped at `11:02:06`
+worked on exercises practicing earlier learnt concepts
