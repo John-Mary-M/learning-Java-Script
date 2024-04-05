@@ -32,3 +32,25 @@ function addToCart(){
   let result = document.querySelector('.js-added');
   result.innerText = 'Added';
 }
+
+// 12g
+// function changes the title
+function changeTitle(){
+  let docTitle = document.title;
+  let newTitle = 0;
+  let toggle = true;  // variable to toggle between titles
+
+  setInterval(function(){
+    if (toggle){
+      document.title = docTitle; // change to orignal title
+    } else {
+      document.title = newTitle;  // change to new title
+    }
+    toggle = !toggle;  // toggle value for next iteration
+  }, 1000);
+}
+
+// calling the function once the page loads
+window.onload = function(){
+  changeTitle();
+}
