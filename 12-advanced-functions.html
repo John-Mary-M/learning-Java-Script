@@ -82,7 +82,7 @@
     'wash dishes',
     'watch youtube'
    ]
-   arry.forEach(function(value, index){
+   arry.forEach((value, index) => {
     // the forEach method doesnt work with the continue keyword to skip but we can instead use return
     if (value === 'wash dishes'){
       return;
@@ -92,6 +92,32 @@
     console.log(value);
    });
 
+   const regularFunction = function(){
+    console.log('Hello');
+   }
+
+   const arrowFunction = (param) => {
+    console.log('hello');
+   }
+   arrowFunction();
+
+   const onePram = (param) => {
+    console.log(param + 1);
+   }
+   onePram(3);
+
+   // if arrow function is just one line the carry brackets are optional same as the return keyword
+   const oneLine = () => 2 + 3;
+   console.log(oneLine());
+
+   const object2 = {
+    method: () => {
+
+    },
+    method(){
+      
+    }
+   };
   </script>
 </body>
 </html>

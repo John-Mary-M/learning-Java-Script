@@ -19,10 +19,13 @@ if (!score) {
   let isAutoPlaying = false;
   let intervalId;
 
+  //const autoPlay = () => {
+
+  //};
   function autoPlay(){
     if (!isAutoPlaying){
       // play the game every second
-      intervalId = setInterval(function(){
+      intervalId = setInterval(() => {
       const playMove = pickComputerMove();
       playGame(playMove);
       }, 2000);

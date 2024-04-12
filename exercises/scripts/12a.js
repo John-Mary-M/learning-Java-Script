@@ -34,23 +34,44 @@ function addToCart(){
 }
 
 // 12g
-// function changes the title
-function changeTitle(){
+// Initial number of messages
+let messages = 2;
+
+// Function to update title
+function updateTitle() {
   let docTitle = document.title;
-  let newTitle = 0;
-  let toggle = true;  // variable to toggle between titles
+  let newTitle = messages + 'New messages'; // Update title with the number of messages
 
+  
   setInterval(function(){
-    if (toggle){
-      document.title = docTitle; // change to orignal title
-    } else {
-      document.title = newTitle;  // change to new title
-    }
-    toggle = !toggle;  // toggle value for next iteration
-  }, 1000);
+    document.title = newTitle;  // Update title
+  }, 1000); // Interval in milliseconds (1 second)
+
 }
 
-// calling the function once the page loads
-window.onload = function(){
-  changeTitle();
+
+// Function to handle adding a message
+function addMessage() {
+  messages += 1; // Increment the number of messages
+  updateTitle(); // Update title
 }
+
+// Function to handle removing a message
+function removeMessage() {
+  if (messages > 1) {
+    messages -= 1; // Decrement the number of messages (minimum 1)
+    updateTitle(); // Update title
+  }
+}
+
+// Add event listeners to the buttons
+document.getElementById("addButton").addEventListener("click", addMessage);
+document.getElementById("removeButton").addEventListener("click", removeMessage);
+
+
+
+
+// Call the function once the page is loaded
+window.onload = function(){
+  updateTitle();
+};
