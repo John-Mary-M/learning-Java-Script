@@ -6,9 +6,23 @@
   <title>advanced functions</title>
 </head>
 <body>
-  
+  <button onclick="" class="js-button">Click</button>
 
   <script>
+    // using addEventListener instead of onclick attribute.
+    // addEventListener gives us the ability to listen for multiple events
+    const buttonElement = document.querySelector('.js-button');
+    const eventListener = ()=>{
+      console.log('Clicked');
+    }
+    buttonElement.addEventListener('click', eventListener());
+
+    // we can also remove event listener with the remove event listeners
+    buttonElement.removeEventListener('click', eventListener);
+
+    buttonElement.addEventListener('click', ()=>{
+      console.log('Clicked2');
+    });
     /*
     // easier to read and givives us the advantage of hoisting. ie calling a function before its created
    function greeting(){
@@ -77,6 +91,7 @@
 
    // another way to loop through an array. Most preffered way.
 
+   /*
    const arry = [
     'make dinner',
     'wash dishes',
@@ -115,9 +130,12 @@
 
     },
     method(){
-      
+
     }
    };
+   */
+
+
   </script>
 </body>
 </html>
