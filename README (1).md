@@ -63,3 +63,7 @@ Learnt the forEach array method, learnt asynchronous code (doesnt wait for previ
 ### 4/04/2024
 stopped at `11:02:06`
 worked on exercises practicing earlier learnt concepts
+
+### 12/04/2024
+stopped at `11:33:22`
+fixxed my rock paper scissors game, modified it to use event listeners instead of onclick attribute, and added keydown which enables player to use designated keys on the keyboard to play the game.
